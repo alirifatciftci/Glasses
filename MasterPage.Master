@@ -1,0 +1,562 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="secondsite.MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>ALİ GlASSES</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/icon.png">
+
+    <!-- Plugins -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/plugins.css">
+
+    <!-- Style Css -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="css/custom.css">
+    <div id="wrapper" class="wrapper">
+        <!-- Header -->
+        <header class="header chasmishco_header">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-xl-3 col-lg-2 col-4">
+                        <div class="logo">
+                            <a href="index.html">
+                                <img src="img/logo/logo1.png" alt="chasmishco Logo">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xl-9 col-lg-10 col-8 position-relative">
+                        <div class="header_right_sidebar">
+                            <div class="login_account">
+                                <div class="account">
+                                    <ul>
+                                        <li>
+                                            <a href="login-register.html">Login</a>
+                                        </li>
+                                        <li>
+                                            <a href="login-register.html">Reg</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="mini_cat_box">
+                                    <div class="shop_cart_icon shop_trigger shopping_basket header-cart">
+                                        <img src="img/icons/icon.png" alt="icons">
+                                        <span class="shop_count">3</span>
+                                        <span class="cart_text">cart</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="glass_toggle_menu">
+                                <nav class="mainmenu_nav mainmenu__nav">
+                                    <ul class="main_menu">
+                                        <li>
+                                            <a href="Default.aspx">Anasayfa</a>
+                                        </li>
+                                        <li>
+                                            <a href="Shop.aspx">Mağaza</a>
+                                        </li>
+                                        <li>
+                                            <a href="Blog.aspx">Blog</a>
+                                        </li>
+                                        <li>
+                                            <a href="About.aspx">Hakkimizda</a>
+                                        </li>
+                                        <li>
+                                            <a href="Contact.aspx">İletişim</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+
+                                <div class="hamburger-box button mobile-toggle">
+                                    <span class="mobile-toggle__icon"></span>
+                                </div>
+                            </div>
+
+                            <div class="mobile-menu-toggle d-lg-none">
+                                <button class="menu-toggle">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </header>
+
+
+        <!-- Mobile Menu Start -->
+        <div class="mobile-menu mobile-menu-items">
+
+            <div class="mobile-menu-close">
+                <button class="close-toggle">
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+
+            <ul class="main_menu">
+                <li>
+                    <a href="index.html">Home</a>
+                    <ul class="dropdown">
+                        <li>
+                            <a href="index.html">Home Version 01</a>
+                        </li>
+                        <li>
+                            <a href="index-2.html">Home Version 02</a>
+                        </li>
+                        <li>
+                            <a href="index-3.html">Home Version 03</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="shop-grid.html">Shop</a>
+                    <ul class="dropdown">
+                        <li><a href="shop-grid.html">Shop Grid</a></li>
+                        <li><a href="shop-list.html">Shop List</a></li>
+                        <li><a href="single-product.html">Shop Single</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="blog-three-column.html">Blog</a>
+                    <ul class="dropdown">
+                        <li><a href="blog-three-column.html">Blog Three Column</a></li>
+                        <li><a href="blog-two-column.html">Blog Two Column</a></li>
+                        <li><a href="blog-sidebar.html">Blog Sidebar</a></li>
+                        <li><a href="blog-details.html">Blog Details</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="#">pages</a>
+                    <ul class="dropdown">
+                        <li><a href="cart.html">Cart Page</a></li>
+                        <li><a href="compare.html">Compare Page</a></li>
+                        <li><a href="wishlist.html">Wishlist Page</a></li>
+                        <li><a href="my-account.html">My Account</a></li>
+                        <li><a href="checkout.html">Checkout Page</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div class="menu-overlay"></div>
+        <!-- Mobile Menu End -->
+
+        <!-- Mini Cart Wrap Start -->
+        <div class="mini-cart-wrap">
+
+            <!-- Mini Cart Top -->
+            <div class="mini-cart-top">
+                <button class="close-cart">
+                    Close Cart
+    <i class="icofont icofont-close"></i>
+                </button>
+            </div>
+
+            <!-- Mini Cart Products -->
+            <ul class="mini-cart-products">
+                <li>
+                    <a class="image">
+                        <img src="img/product/product-1.jpg" alt="Product">
+                    </a>
+                    <div class="content">
+                        <a href="single-product.html" class="title">Simple Silacon Glasses</a>
+                        <span class="price">Price: $59</span>
+                        <span class="qty">Qty: 01</span>
+                    </div>
+                    <button class="remove">
+                        <i class="fa fa-trash-o"></i>
+                    </button>
+                </li>
+                <li>
+                    <a class="image">
+                        <img src="img/product/product-2.jpg" alt="Product">
+                    </a>
+                    <div class="content">
+                        <a href="single-product.html" class="title">Simple Easin Glasses</a>
+                        <span class="price">Price: $20</span>
+                        <span class="qty">Qty: 02</span>
+                    </div>
+                    <button class="remove">
+                        <i class="fa fa-trash-o"></i>
+                    </button>
+                </li>
+                <li>
+                    <a class="image">
+                        <img src="img/product/product-3.jpg" alt="Product">
+                    </a>
+                    <div class="content">
+                        <a href="single-product.html" class="title">Simple Macrox Glasses</a>
+                        <span class="price">Price: $320</span>
+                        <span class="qty">Qty: 03</span>
+                    </div>
+                    <button class="remove">
+                        <i class="fa fa-trash-o"></i>
+                    </button>
+                </li>
+            </ul>
+            <!-- Mini Cart Bottom -->
+            <div class="mini-cart-bottom">
+                <h4 class="sub-total">Total:
+    <span>$120</span>
+                </h4>
+                <div class="button">
+                    <a href="checkout.html">CHECKOUT</a>
+                </div>
+            </div>
+
+        </div>
+        <!-- Mini Cart Wrap End -->
+
+        <!-- Cart Overlay -->
+        <div class="body_overlay"></div>
+        <!--// Header -->
+
+
+
+        <!-- Start Footer Area -->
+
+        <!-- End Footer Area -->
+
+        <!-- Quick View Modal -->
+        <div class="quick-view-modal">
+            <div class="quick-view-modal-inner">
+                <div class="container">
+                    <div class="product-details">
+                        <!-- Product Details Left -->
+                        <div class="product-details-left">
+                            <div class="product-details-images slider-navigation-2">
+                                <a href="img/product/sm1.png">
+                                    <img src="img/product/big-img.png" alt="product image">
+                                </a>
+                                <a href="img/product/sm2.png">
+                                    <img src="img/product/big-img.png" alt="product image">
+                                </a>
+                                <a href="img/product/sm3.png">
+                                    <img src="img/product/big-img.png" alt="product image">
+                                </a>
+                                <a href="img/product/sm1.png">
+                                    <img src="img/product/big-img.png" alt="product image">
+                                </a>
+                                <a href="img/product/sm1.png">
+                                    <img src="img/product/big-img.png" alt="product image">
+                                </a>
+                            </div>
+                            <div class="product-details-thumbs slider-navigation-2">
+                                <img src="img/product/sm1.png" alt="product image thumb">
+                                <img src="img/product/sm2.png" alt="product image thumb">
+                                <img src="img/product/sm3.png" alt="product image thumb">
+                                <img src="img/product/sm1.png" alt="product image thumb">
+                                <img src="img/product/sm1.png" alt="product image thumb">
+                            </div>
+                        </div>
+                        <!--// Product Details Left -->
+
+                        <!-- Product Details Right -->
+                        <div class="product-details-right">
+                            <h5 class="product-title">Aenean Eu Tristique</h5>
+
+                            <div class="ratting-stock-availbility">
+                                <div class="ratting-box">
+                                    <span><i class="fa fa-star"></i></span>
+                                    <span><i class="fa fa-star"></i></span>
+                                    <span><i class="fa fa-star"></i></span>
+                                    <span><i class="fa fa-star"></i></span>
+                                    <span><i class="fa fa-star"></i></span>
+                                </div>
+                                <span class="stock-available">In stock</span>
+                            </div>
+
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla augue nec est
+                tristique auctor. Donec non est at libero vulputate rutrum. Morbi ornare lectus quis justo
+                gravida semper. Nulla tellus mi, vulputate adipiscing cursus eu, suscipit id nulla.
+                adipiscing cursus eu, suscipit id nulla.
+                            </p>
+
+                            <div class="price-box">
+                                <span class="pricebox-price">£80.00</span>
+                            </div>
+
+                            <div class="product-details-quantity">
+                                <div class="quantity-select">
+                                    <div class="pro-quantity">
+                                        <div class="pro-qty">
+                                            <input type="text" value="1">
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#" class="add-to-cart-button">
+                                    <span>ADD TO CART</span>
+                                </a>
+                            </div>
+
+                            <div class="product-details-color">
+                                <span>Color :</span>
+                                <ul>
+                                    <li class="red"><span></span></li>
+                                    <li class="green checked"><span></span></li>
+                                    <li class="blue"><span></span></li>
+                                    <li class="black"><span></span></li>
+                                </ul>
+                            </div>
+
+                            <div class="product-details-size">
+                                <span>Size :</span>
+                                <ul>
+                                    <li class="checked"><span>S</span></li>
+                                    <li><span>M</span></li>
+                                    <li><span>L</span></li>
+                                    <li><span>XL</span></li>
+                                    <li><span>XXL</span></li>
+                                </ul>
+                            </div>
+
+                            <div class="product-details-categories">
+                                <span>Categories :</span>
+                                <ul>
+                                    <li><a href="shop.html">Accessories</a></li>
+                                    <li><a href="shop.html">Kids</a></li>
+                                    <li><a href="shop.html">Women</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="product-details-tags">
+                                <span>Tags :</span>
+                                <ul>
+                                    <li><a href="shop.html">Electronic</a></li>
+                                    <li><a href="shop.html">Television</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="product-details-socialshare">
+                                <span>Share :</span>
+                                <ul>
+                                    <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a class="google-plus" href="#"><i class="fa fa-google-plus"></i></a></li>
+                                    <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a class="instagram" href="#"><i class="fa fa-instagram"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--// Product Details Right -->
+
+                    </div>
+                </div>
+            </div>
+            <button class="close-quickview-modal"><i class="fa fa-close"></i></button>
+        </div>
+        <!--// Quick View Modal -->
+    </div>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+
+            <!-- Wrapper -->
+
+            <!--// Wrapper -->
+
+            <!-- Js Files -->
+            <script src="js/vendor/modernizr-3.6.0.min.js"></script>
+            <script src="js/vendor/jquery.min.js"></script>
+            <script src="js/popper.min.js"></script>
+            <script src="js/bootstrap.min.js"></script>
+            <script src="js/plugins.js"></script>
+
+            <script>
+                (function () {
+                    const deadline = '2025 `-12-12 16:10';
+
+                    function pad(num, size) {
+                        const s = "0" + num;
+                        return s.substr(s.length - size);
+                    }
+
+                    function getTimeRemaining(endtime) {
+                        const t = Date.parse(endtime) - Date.parse(new Date()),
+                            seconds = Math.floor((t / 1000) % 60),
+                            minutes = Math.floor((t / 1000 / 60) % 60),
+                            hours = Math.floor((t / (1000 * 60 * 60)) % 24),
+                            days = Math.floor(t / (1000 * 60 * 60 * 24));
+
+                        return {
+                            'total': t,
+                            'days': days,
+                            'hours': hours,
+                            'minutes': minutes,
+                            'seconds': seconds
+                        };
+                    }
+
+                    function clock(id, endtime) {
+                        const days = document.getElementById(id + '-days'),
+                            hours = document.getElementById(id + '-hours'),
+                            minutes = document.getElementById(id + '-minutes'),
+                            seconds = document.getElementById(id + '-seconds');
+
+                        const timeinterval = setInterval(function () {
+                            const t = getTimeRemaining(endtime);
+
+                            if (t.total <= 0) {
+                                clearInterval(timeinterval);
+                            } else {
+                                days.innerHTML = pad(t.days, 2);
+                                hours.innerHTML = pad(t.hours, 2);
+                                minutes.innerHTML = pad(t.minutes, 2);
+                                seconds.innerHTML = pad(t.seconds, 2);
+                            }
+                        }, 1000);
+                    }
+
+                    clock('js-clock', deadline);
+                })();
+            </script>
+
+            <script src="js/main.js"></script>
+            <footer class="footer_area">
+                <div class="footer_top bg-cat--1">
+                    <div class="container">
+                        <div class="row">
+                            <!-- Start Single Footer -->
+                            <div class="col-lg-3 col-sm-6 col-12 mb--50">
+                                <div class="footer_widget">
+                                    <h2 class="ft_widget_title">Los Angeles</h2>
+                                    <div class="textwidget">
+                                        <p>
+                                            254 Roselen de Square
+                    <br>
+                                            Century Street, Haven Tower
+                    <br>
+                                            Los Angeles, USA
+                                        </p>
+                                        <p>01254 658 987, 02365 987 456</p>
+                                        <p>
+                                            info@example.com
+                    <br>
+                                            www.example.com
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Single Footer -->
+                            <!-- Start Single Footer -->
+                            <div class="col-lg-3 col-sm-6 col-12 mb--50">
+                                <div class="footer_widget">
+                                    <h2 class="ft_widget_title">Manchester</h2>
+                                    <div class="textwidget">
+                                        <p>
+                                            254 Roselen de Square
+                    <br>
+                                            Century Street, Haven Tower
+                    <br>
+                                            Los Angeles, USA
+                                        </p>
+                                        <p>01254 658 987, 02365 987 456</p>
+                                        <p>
+                                            info@example.com
+                    <br>
+                                            www.example.com
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Single Footer -->
+                            <!-- Start Single Footer -->
+                            <div class="col-lg-3 col-sm-6 col-12 mb--50">
+                                <div class="footer_widget">
+                                    <h2 class="ft_widget_title">Abu Dhabi</h2>
+                                    <div class="textwidget">
+                                        <p>
+                                            Oxeler Bin Square
+                    <br>
+                                            Seleya Street, Silicon Tower
+                    <br>
+                                            Abu Dhabi, UAE
+                                        </p>
+                                        <p>09365 856 658, 09683 2656 889</p>
+                                        <p>
+                                            info@example.com
+                    <br>
+                                            www.example.com
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Single Footer -->
+                            <!-- Start Single Footer -->
+                            <div class="col-lg-3 col-sm-6 col-12 mb--50">
+                                <div class="footer_widget">
+                                    <h2 class="ft_widget_title">Newsletter</h2>
+                                    <div class="textwidget">
+                                        <div class="input_box">
+                                            <input type="email" placeholder="Enter your email here">
+                                            <button>Subscribe</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Single Footer -->
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright bg-cat--2">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6">
+                                <div class="copy_text">
+                                    <p>
+                                        &copy; Chasmish,
+                            <script>document.write(new Date().getFullYear())</script>
+                                        .
+                Made with <i class="fa fa-heart text-danger"></i>by
+                <a href="http://hasthemes.com/" target="_blank">HasThemes</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <ul class="footer_menu d-flex justify-content-end">
+                                    <li>
+                                        <a href="#">Product Tracking</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Terms & Conditions</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </form>
+</body>
+</html>

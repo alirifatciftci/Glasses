@@ -1,0 +1,21 @@
+HTTrack3.49-2+htsswf+htsjava launched on Mon, 30 Dec 2024 18:48:15 at https://htmldemo.net/chasmish/chasmish/index.html +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwr20C2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A250000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "tr, en, *" https://htmldemo.net/chasmish/chasmish/index.html -O1 "C:\Users\aliri\Desktop\aliglass\glass" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+18:49:11	Error: 	"Not Found" (404) at link https://htmldemo.net/chasmish/chasmish/shop.html (from https://htmldemo.net/chasmish/chasmish/index.html)
+18:49:17	Error: 	"Not Found" (404) at link https://htmldemo.net/chasmish/chasmish/img/bg/bg-image-13.jpg (from https://htmldemo.net/chasmish/chasmish/css/style.css)
+18:49:17	Error: 	"Not Found" (404) at link https://htmldemo.net/chasmish/chasmish/img/bg/bg-image-14.jpg (from https://htmldemo.net/chasmish/chasmish/css/style.css)
+18:49:17	Error: 	"Not Found" (404) at link https://htmldemo.net/chasmish/chasmish/img/bg/bg-image-15.jpg (from https://htmldemo.net/chasmish/chasmish/css/style.css)
+18:49:17	Error: 	"Not Found" (404) at link https://htmldemo.net/chasmish/chasmish/img/bg/bg-image-16.jpg (from https://htmldemo.net/chasmish/chasmish/css/style.css)
+18:49:17	Error: 	"Not Found" (404) at link https://htmldemo.net/chasmish/chasmish/img/bg/bg-image-17.jpg (from https://htmldemo.net/chasmish/chasmish/css/style.css)
+18:49:17	Error: 	"Not Found" (404) at link https://htmldemo.net/chasmish/chasmish/img/bg/bg-image-18.jpg (from https://htmldemo.net/chasmish/chasmish/css/style.css)
+18:49:17	Error: 	"Not Found" (404) at link https://htmldemo.net/chasmish/chasmish/img/bg/bg-image-19.jpg (from https://htmldemo.net/chasmish/chasmish/css/style.css)
+18:49:17	Error: 	"Not Found" (404) at link https://htmldemo.net/chasmish/chasmish/img/bg/bg-image-20.jpg (from https://htmldemo.net/chasmish/chasmish/css/style.css)
+18:49:17	Error: 	"Not Found" (404) at link https://htmldemo.net/chasmish/chasmish/blog-detals.html (from https://htmldemo.net/chasmish/chasmish/blog-sidebar.html)
+
+HTTrack Website Copier/3.49-2 mirror complete in 1 minutes 3 seconds : 156 links scanned, 145 files written (5114333 bytes overall) [3189488 bytes received at 50626 bytes/sec], 2797470 bytes transferred using HTTP compression in 56 files, ratio 26%, 52.0 requests per connection
+(10 errors, 0 warnings, 0 messages)
