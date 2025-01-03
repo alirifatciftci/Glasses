@@ -1,0 +1,85 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="secondsite.Ders1512.MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title></title>
+    <link rel="icon" type="image/png" sizes="16x16" href="/Ders1512/assets/images/favicon.png" />
+    <link href="/Ders1512/css/style.css" rel="stylesheet" />
+    <script src="/Ders1512/js/modernizr-3.6.0.min.js"></script>
+
+    <asp:ContentPlaceHolder ID="head123" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class="v-light vertical-nav fix-header fix-sidebar">
+    <form id="form1" runat="server">
+        <div id="preloader">
+            <div class="loader">
+                <svg class="circular" viewBox="25 25 50 50">
+                    <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="3" stroke-miterlimit="10" />
+                </svg>
+            </div>
+        </div>
+        <div id="main-wrapper">
+
+            <div class="header">
+                <div class="nav-header">
+                    <div class="brand-logo">
+                        <a href="Anasayfa.aspx">
+                            <asp:Literal ID="ltrBannerLogo" runat="server"></asp:Literal>
+                        </a>
+                    </div>
+                    <div class="nav-control">
+                        <div class="hamburger">
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="line"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="nk-sidebar">
+                <div class="nk-nav-scroll">
+                    <ul class="metismenu" id="menu">
+
+                        <li>
+                            <a href="Anasayfa.aspx">
+                                <i class="mdi mdi-home"></i>
+                                <span class="nav-text">Anasayfa</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="AdminTanim.aspx">
+                                <i class="fa fa-users"></i>
+                                <span class="nav-text">Kullanıcı Tanım</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content-body">
+
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+
+            </div>
+            <div class="footer">
+                <div class="copyright">
+                    <p>Copyright &copy;  2025 <a href="http://www.tuzlatasarim.com">
+                        <img src="/Upload/tuzlatasarim.png" style="height: 30px;" /></a></p>
+                </div>
+            </div>
+        </div>
+        <script src="/Ders1512/assets/plugins/common/common.min.js"></script>
+        <script src="/Ders1512/js/custom.min.js"></script>
+    </form>
+</body>
+</html>
