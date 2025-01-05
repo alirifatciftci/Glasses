@@ -13,6 +13,7 @@
     <!-- Custom Stylesheet -->
     <link href="/Ders1512/css/style.css" rel="stylesheet" />
     <script src="/Ders1512/js/modernizr-3.6.0.min.js"></script>
+    <a href="Default.aspx">Default.aspx</a>
 </head>
 <body class="h-100">
     <form id="form1" runat="server">

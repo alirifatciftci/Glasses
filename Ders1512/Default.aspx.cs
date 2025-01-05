@@ -30,7 +30,7 @@ namespace secondsite.Ders1512
 
             
             //hangi sql cümlesiyle bağlantıyı alıyoruz
-            SqlCommand com = new SqlCommand("select ID, adisoyadi from admin where kullaniciadi=@kullaniciadi and sifre=@sifre", b.Baglanti);
+            SqlCommand com = new SqlCommand("select kullaniciadi, sifre from dbo.admin where kullaniciadi=@kullaniciadi and sifre=@sifre", b.Baglanti);
             //çalışmasını istediğim ve bana kayıtları getirmesi gereken sql cümlesini yazdım ve parametre olarak bir sonraki adımda kullanacağım değerlerin @ işaretiyle sql cümlesinin içinde tanımlamamı yaptım. VE bir önceki adımda tanımlamış olduğum veritabanı bağlantı bilgisinin kullanılması gerektiğini de tanımladım.
             
             //parametrelerin belirlenmesi

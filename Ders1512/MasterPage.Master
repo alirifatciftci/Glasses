@@ -57,11 +57,82 @@
                             </a>
                         </li>
                         <li>
-                            <a href="AdminTanim.aspx">
+                            <a href="Gelenler.aspx">
                                 <i class="fa fa-users"></i>
-                                <span class="nav-text">Kullanıcı Tanım</span>
+                                <span class="nav-text">Gelen Mesajlar</span>
                             </a>
                         </li>
+
+                        <li>
+                            <a href="Slider.aspx">
+                                <i class="fa fa-users"></i>
+                                <span class="nav-text">Slider Resim</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="Hakkimizda.aspx">
+                                <i class="fa fa-users"></i>
+                                <span class="nav-text">Hakkımızda</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="Sabitler.aspx">
+                                <i class="fa fa-users"></i>
+                                <span class="nav-text">Site Sabitleri</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="YoneticiTanim.aspx">
+                                <i class="fa fa-users"></i>
+                                <span class="nav-text">Yönetici Tanım</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="iletisim.aspx">
+                                <i class="fa fa-users"></i>
+                                <span class="nav-text">İletişim</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="Urunler.aspx">
+                                <i class="fa fa-users"></i>
+                                <span class="nav-text">Ürünler</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="UrunResim.aspx">
+                                <i class="fa fa-users"></i>
+                                <span class="nav-text">Ürün Resimleri</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="UrunKategori.aspx">
+                                <i class="fa fa-users"></i>
+                                <span class="nav-text">Ürün Kategori</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="Kategori.aspx">
+                                <i class="fa fa-users"></i>
+                                <span class="nav-text">Kategori</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="AdminTanim.aspx">
+                                <i class="fa fa-users"></i>
+                                <span class="nav-text">Çıkış</span>
+                            </a>
+                        </li>
+
                     </ul>
                 </div>
             </div>
@@ -73,8 +144,10 @@
             </div>
             <div class="footer">
                 <div class="copyright">
-                    <p>Copyright &copy;  2025 <a href="http://www.tuzlatasarim.com">
-                        <img src="/Upload/tuzlatasarim.png" style="height: 30px;" /></a></p>
+                    <p>
+                        Copyright &copy;  2025 <a href="http://www.tuzlatasarim.com">
+                            <img src="/Upload/tuzlatasarim.png" style="height: 30px;" /></a>
+                    </p>
                 </div>
             </div>
         </div>
