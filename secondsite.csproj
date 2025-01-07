@@ -799,6 +799,16 @@
     <Content Include="Ders1512\js\modernizr-3.6.0.min.js" />
     <Content Include="Ders1512\scss\compiled\fonts.css" />
     <Content Include="Ders1512\scss\compiled\reset.css" />
+    <Content Include="Ders1512\Gelenler.aspx" />
+    <Content Include="Ders1512\Slider.aspx" />
+    <Content Include="Ders1512\Hakkimizda.aspx" />
+    <Content Include="Ders1512\Sabitler.aspx" />
+    <Content Include="Ders1512\Iletisim.aspx" />
+    <Content Include="Ders1512\Urunler.aspx" />
+    <Content Include="Ders1512\UrunResim.aspx" />
+    <Content Include="Ders1512\UrunKategori.aspx" />
+    <Content Include="Ders1512\Kategori.aspx" />
+    <Content Include="Ders1512\YoneticiTanim.aspx" />
     <Content Include="fonts\fontawesome-webfont3e6e.svg" />
     <Content Include="fonts\slick.svg" />
     <Content Include="fonts\themify9f24.svg" />
@@ -963,6 +973,76 @@
     </Compile>
     <Compile Include="Ders1512\MasterPage.Master.designer.cs">
       <DependentUpon>MasterPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Ders1512\Gelenler.aspx.cs">
+      <DependentUpon>Gelenler.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ders1512\Gelenler.aspx.designer.cs">
+      <DependentUpon>Gelenler.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ders1512\Slider.aspx.cs">
+      <DependentUpon>Slider.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ders1512\Slider.aspx.designer.cs">
+      <DependentUpon>Slider.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ders1512\Hakkimizda.aspx.cs">
+      <DependentUpon>Hakkimizda.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ders1512\Hakkimizda.aspx.designer.cs">
+      <DependentUpon>Hakkimizda.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ders1512\Sabitler.aspx.cs">
+      <DependentUpon>Sabitler.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ders1512\Sabitler.aspx.designer.cs">
+      <DependentUpon>Sabitler.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ders1512\Iletisim.aspx.cs">
+      <DependentUpon>Iletisim.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ders1512\Iletisim.aspx.designer.cs">
+      <DependentUpon>Iletisim.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ders1512\Urunler.aspx.cs">
+      <DependentUpon>Urunler.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ders1512\Urunler.aspx.designer.cs">
+      <DependentUpon>Urunler.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ders1512\UrunResim.aspx.cs">
+      <DependentUpon>UrunResim.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ders1512\UrunResim.aspx.designer.cs">
+      <DependentUpon>UrunResim.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ders1512\UrunKategori.aspx.cs">
+      <DependentUpon>UrunKategori.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ders1512\UrunKategori.aspx.designer.cs">
+      <DependentUpon>UrunKategori.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ders1512\Kategori.aspx.cs">
+      <DependentUpon>Kategori.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ders1512\Kategori.aspx.designer.cs">
+      <DependentUpon>Kategori.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ders1512\YoneticiTanim.aspx.cs">
+      <DependentUpon>YoneticiTanim.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ders1512\YoneticiTanim.aspx.designer.cs">
+      <DependentUpon>YoneticiTanim.aspx</DependentUpon>
     </Compile>
     <Compile Include="MasterPage.Master.cs">
       <DependentUpon>MasterPage.Master</DependentUpon>
