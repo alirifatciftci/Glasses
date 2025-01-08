@@ -1,0 +1,15 @@
+﻿yönetim paneli için veritabanına çıkartılması gereken
+sayfalar
+
+1 - tane admin girişi 
+2 - ürünlerin listelendiği ürün girişi (Urunler.aspx)
+3 - ürünlerin resimlerinin yer aldıgı ürün resim (UrunResim.aspx)
+4 - ürünlerin kategorilerinin yer aldıgı (UrunKategori.aspx)
+5 - blog sayfası (Blog.aspx)
+6 - hakkimizda sayfası (Hakkimizda.aspx)
+7 - iletişim sayfası (iletisim.aspx)
+8 - sitenin footer kısmı (sabitler.aspx)
+9 - slider (slider.aspx)
+10 - yönetici tanım kısmı (YoneticiTanim.aspx)
+11 - Gelen mesajlar için (Gelenler.aspx)
+12 - Kategorilerin tutulduğu (Kategori.aspx)
