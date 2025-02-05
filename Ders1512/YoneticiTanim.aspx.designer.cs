@@ -13,5 +13,23 @@ namespace secondsite.Ders1512
 
     public partial class YoneticiTanim
     {
+
+        /// <summary>
+        /// lnkYeniKayit control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton lnkYeniKayit;
+
+        /// <summary>
+        /// pnlIcerik control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel pnlIcerik;
     }
 }

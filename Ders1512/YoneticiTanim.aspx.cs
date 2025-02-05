@@ -13,5 +13,17 @@ namespace secondsite.Ders1512
         {
 
         }
+
+        protected void lnkYeniKayit_Click(object sender, EventArgs e)
+        {
+            if(pnlIcerik.Visible==false)
+            {
+                pnlIcerik.Visible = true;
+            }
+            else 
+            {
+                Response.Redirect(Request.Url.AbsolutePath);
+            }
+        }
     }
 }
