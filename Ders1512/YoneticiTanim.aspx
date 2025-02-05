@@ -43,21 +43,41 @@
 
             <!-- Diğer Kart Alanları -->
             <asp:Panel ID="pnlIcerik" runat="server" Visible="false">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="basic-form">
-                                <div class="form-group">
-                                    <!-- Buraya içerik  -->
-                                    Kayıtların yapılacaği form alanı
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="basic-form">
+
+                                    <div class="form-group">
+                                        <asp:TextBox ID="txtKullaniciAdi" runat="server" class="form-control input-default" placeholder="Kullanıcı adını yazınız :"></asp:TextBox>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <asp:TextBox ID="TxtSifre" runat="server" class="form-control input-default" placeholder="Şifreyi yazınız :"></asp:TextBox>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <asp:TextBox ID="txtAdiSoyadi" runat="server" class="form-control input-default" placeholder="Adı Soyadı yazınız :"></asp:TextBox>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <asp:TextBox ID="txtMailAdresi" runat="server" class="form-control input-default" placeholder="Mail Adresini yazınız :"></asp:TextBox>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <asp:LinkButton ID="lnkKaydet" runat="server" class ="btn btn-secondary" OnClick="lnkKaydet_Click">Kaydet</asp:LinkButton>
+                                    </div>
+                                    <asp:Label ID="lblMesaj" runat="server" Text="" Visible="false" Font-Bold="true" ForeColor="Red"></asp:Label>
+
+
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-                </asp:Panel>
+
+        </asp:Panel>
 
             <div class="row">
                 <div class="col-lg-12">
@@ -66,7 +86,7 @@
                             <div class="basic-form">
                                 <div class="form-group">
                                     <!-- Buraya içerik  -->
-                                     Kayıtların yapılacaği liste alanı
+                                    Kayıtların yapılacaği liste alanı
                                 </div>
                             </div>
                         </div>
@@ -74,8 +94,8 @@
                 </div>
             </div>
 
-        </div>
-        <!-- container bitişi -->
+    </div>
+    <!-- container bitişi -->
     </div>
     <!-- content-body bitişi -->
 
