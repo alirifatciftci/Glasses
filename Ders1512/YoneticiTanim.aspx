@@ -66,39 +66,58 @@
                                     </div>
 
                                     <div class="form-group">
-                                        <asp:LinkButton ID="lnkKaydet" runat="server" class ="btn btn-secondary" OnClick="lnkKaydet_Click">Kaydet</asp:LinkButton>
+                                        <asp:LinkButton ID="lnkKaydet" runat="server" class="btn btn-secondary" OnClick="lnkKaydet_Click">Kaydet</asp:LinkButton>
                                     </div>
                                     <asp:Label ID="lblMesaj" runat="server" Text="" Visible="false" Font-Bold="true" ForeColor="Red"></asp:Label>
-
-
+                                    <asp:Label ID="lblDegistirID" runat="server" Visible="true" ></asp:Label>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
-        </asp:Panel>
-
+            </asp:Panel>
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="basic-form">
-                                <div class="form-group">
-                                    <!-- Buraya içerik  -->
-                                    Kayıtların yapılacaği liste alanı
-                                </div>
-                            </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-striped table-bordered zero-configuration">
+                                <thead>
+                                    <tr>
+                                        <th>No</th>
+                                        <th>Adı Soyadı</th>
+                                        <th>Mail Adresi</th>
+                                        <th>Kullanıcı Adı</th>
+                                        <th>Şifre</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <asp:Repeater ID="rptListe" runat="server">
+                                        <ItemTemplate>
+                                            <tr>
+                                                <td><%# Eval("ID") %></td>
+                                                <td><%# Eval("adisoyadi") %></td>
+                                                <td><%# Eval("mailadresi") %></td>
+                                                <td><%# Eval("kullaniciadi") %></td>
+                                                <td><%# Eval("sifre") %></td>
+                                                <td>
+                                                    <asp:LinkButton ID="lnkDegistir" runat="server" class="btn btn-info" CommandArgument='<%# Eval("ID")%>' OnClick="lnkDegistir_Click">Degistir</asp:LinkButton></td>
+                                                <td>&nbsp;</td>
+                                            </tr>
+                                        </ItemTemplate>
+                                    </asp:Repeater>
+                                </tbody>
+
+                            </table>
                         </div>
                     </div>
                 </div>
             </div>
 
-    </div>
-    <!-- container bitişi -->
+        </div>
+        <!-- container bitişi -->
     </div>
     <!-- content-body bitişi -->
 
     <!-- #/ container -->
-    </div>
+
 </asp:Content>

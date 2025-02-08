@@ -13,7 +13,7 @@ namespace secondsite.Ders1512
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            listegetir();
         }
 
         protected void lnkYeniKayit_Click(object sender, EventArgs e)
@@ -71,8 +71,42 @@ namespace secondsite.Ders1512
                 com.Connection.Close();
             }
         }
+
+        protected void listegetir()
+        {
+            // veritabanı bağlantı bilgisi
+            BaglantiBilgileri b = new BaglantiBilgileri();
+            // sql komutu
+            SqlCommand com = new SqlCommand("select ID,kullaniciadi , sifre, mailadresi, adisoyadi from admin", b.Baglanti);
+            // veritabanı bağlantısını açma işlemi
+            if(com.Connection.State == System.Data.ConnectionState.Closed)
+            {
+                com.Connection.Open();
+            }
+            // benim için yukarıdaki  sql cümlesinden oluşan kayıtları oku
+            SqlDataReader dr = com.ExecuteReader();
+
+            if(dr.HasRows) // eğer datareader olarak sen kayıtlara sahipsen ya da kayıt varsa
+            {
+                rptListe.DataSource = dr;
+                rptListe.DataBind();
+            }
+            else
+            {
+
+            }
+            dr.Close();
+            com.Connection.Close();
+        }
+
+        protected void lnkDegistir_Click(object sender, EventArgs e)
+        {
+            LinkButton tiklanan = (LinkButton)sender;
+            lblDegistirID.Text = tiklanan.CommandArgument.ToString();
+            pnlIcerik.Visible = true;
+        }
     }
 }
-//  ,[kullaniciadi]    ,[sifre]  ,[mailadresi]   ,[adisoyadi]  
+//  kullaniciadi,sifre,mailadresi,adisoyadi
 
 
