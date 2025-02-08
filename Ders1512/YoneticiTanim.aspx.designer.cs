@@ -42,13 +42,13 @@ namespace secondsite.Ders1512
         protected global::System.Web.UI.WebControls.TextBox txtKullaniciAdi;
 
         /// <summary>
-        /// TxtSifre control.
+        /// txtSifre control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtSifre;
+        protected global::System.Web.UI.WebControls.TextBox txtSifre;
 
         /// <summary>
         /// txtAdiSoyadi control.
@@ -76,6 +76,15 @@ namespace secondsite.Ders1512
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.LinkButton lnkKaydet;
+
+        /// <summary>
+        /// lnkGuncelle control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton lnkGuncelle;
 
         /// <summary>
         /// lblMesaj control.

@@ -48,13 +48,13 @@
                         <div class="card">
                             <div class="card-body">
                                 <div class="basic-form">
-
+                                    
                                     <div class="form-group">
                                         <asp:TextBox ID="txtKullaniciAdi" runat="server" class="form-control input-default" placeholder="Kullanıcı adını yazınız :"></asp:TextBox>
                                     </div>
 
                                     <div class="form-group">
-                                        <asp:TextBox ID="TxtSifre" runat="server" class="form-control input-default" placeholder="Şifreyi yazınız :"></asp:TextBox>
+                                        <asp:TextBox ID="txtSifre" runat="server" class="form-control input-default" placeholder="Şifreyi yazınız :"></asp:TextBox>
                                     </div>
 
                                     <div class="form-group">
@@ -66,7 +66,8 @@
                                     </div>
 
                                     <div class="form-group">
-                                        <asp:LinkButton ID="lnkKaydet" runat="server" class="btn btn-secondary" OnClick="lnkKaydet_Click">Kaydet</asp:LinkButton>
+                                        <asp:LinkButton ID="lnkKaydet" runat="server" class="btn btn-secondary" OnClick="lnkKaydet_Click" Visible="false">Kaydet</asp:LinkButton>
+                                        <asp:LinkButton ID="lnkGuncelle" runat="server" class="btn btn-primary" OnClick="lnkGuncelle_Click" Visible="false">Guncelle</asp:LinkButton>
                                     </div>
                                     <asp:Label ID="lblMesaj" runat="server" Text="" Visible="false" Font-Bold="true" ForeColor="Red"></asp:Label>
                                     <asp:Label ID="lblDegistirID" runat="server" Visible="true" ></asp:Label>
@@ -88,6 +89,9 @@
                                         <th>Mail Adresi</th>
                                         <th>Kullanıcı Adı</th>
                                         <th>Şifre</th>
+                                        <th>Değiştir</th>
+                                        <th>Sil</th>
+
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -101,7 +105,7 @@
                                                 <td><%# Eval("sifre") %></td>
                                                 <td>
                                                     <asp:LinkButton ID="lnkDegistir" runat="server" class="btn btn-info" CommandArgument='<%# Eval("ID")%>' OnClick="lnkDegistir_Click">Degistir</asp:LinkButton></td>
-                                                <td>&nbsp;</td>
+                                                <td><asp:LinkButton ID="lnkSil" runat="server" class="btn btn-danger" CommandArgument='<%# Eval("ID")%>' OnClick="lnkSil_Click">Sil</asp:LinkButton></td>
                                             </tr>
                                         </ItemTemplate>
                                     </asp:Repeater>
